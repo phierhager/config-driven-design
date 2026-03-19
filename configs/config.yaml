@@ -1,0 +1,18 @@
+defaults:
+  - _self_
+  - agent: thomson_sampling
+  - environment: prisoners_dilemma
+
+# Global experiment settings
+experiment:
+  name: game_theory_experiment
+  seed: 42
+  num_episodes: 100
+  max_steps_per_episode: 10
+
+# Hydra configuration
+hydra:
+  run:
+    dir: outputs/${experiment.name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job:
+    chdir: false

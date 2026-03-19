@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "config-driven-design"
+version = "0.1.0"
+description = "Config-driven RL and Game Theory experiments"
+requires-python = ">=3.10"
+dependencies = [
+    # Core ML / Math
+    "jax",
+    "jaxlib",
+    "equinox",
+    
+    # Configuration Management
+    "hydra-core",
+    "dacite",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/config_driven_design"]

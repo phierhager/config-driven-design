@@ -1,0 +1,4 @@
+# UCB Agent Configuration
+type: ucb
+num_actions: 2
+exploration_coefficient: 2.0

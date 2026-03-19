@@ -1,0 +1,5 @@
+# Thomson Sampling Agent Configuration
+type: thomson_sampling
+num_actions: 2
+prior_alpha: 1.0
+prior_beta: 1.0
